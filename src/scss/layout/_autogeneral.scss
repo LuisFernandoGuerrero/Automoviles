@@ -1,0 +1,123 @@
+.automoviles-general {
+    margin-top: 6rem;
+    position: relative;
+    margin-bottom: 5rem;
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
+
+p.informacion {
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    font-weight: $negrita;
+    color: $blanco;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    &::before {
+        content: '';
+        display: block;
+        width: 3rem;
+        height: .5rem;
+        background-color: $azulClaro;
+        transition: .5s width linear;
+    }
+}
+.gradiante {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65%;
+    width: 98%;
+    &:hover {
+        background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 150%);
+        .informacion {
+            color: $azulClaro;
+            &::before {
+                content: '';
+                display: block;
+                width: 18rem;
+                height: .5rem;
+                background-color: $azulClaro;
+            }
+        }
+    }
+}
+
+.conocer-mas {
+    margin-top: 5rem;
+    height: 100rem;
+    @include tablet {
+        @include grid(2, 1rem);
+        height: auto;
+    }
+    @include desktop {
+        height: 27rem;    
+    }
+    img {
+        height: 40%;
+        @include desktop {
+            height: 100%;
+        }
+    }
+}
+
+.informacion-tarjetas {
+    background-color: $blanco;
+    padding: 3rem 1rem;
+    @include desktop {
+        padding: 3rem;
+    }
+    p, a {
+        margin: 0;
+        color: $negro;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .titulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    .descripcion {
+        font-size: 1.4rem;
+        color: $cafe;
+    }
+    .conocernos {
+        text-transform: capitalize;
+        display: block;
+        width: auto;
+        margin-top: 2rem;
+        width: 14rem;
+        @include tablet {
+            margin-top: 1rem;
+        }
+        &::after {
+            content: '';
+            display: block;
+            height: 0rem;
+            width: 0rem;
+            background-color: $negro;
+            transition: .5s width linear;
+        }
+        &:hover {
+            &::after {
+                content: '';
+                display: block;
+                height: .5rem;
+                width: 90%;
+                background-color: $negro;
+            }
+        }
+    }
+}
+
+.divisor {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+        @include grid(2, 0);
+    }
+}

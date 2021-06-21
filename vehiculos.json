@@ -1,0 +1,46 @@
+{
+    "vehiculos": [
+        {
+            "id": 1,
+            "imagen": "/build/img/E200.webp",
+            "nombre": "E200 Avantgarde",
+            "descripcion": "Mercedes-Benz clase C presenta una berlina, elegante, confortable, que genera prestigio y dinamismo.",
+            "precio": "$150.900.000"
+        },
+        {
+            "id": 2,
+            "imagen": "/build/img/c200.webp",
+            "nombre": "C200 Coupé",
+            "descripcion": "La clase C y la versión Coupe es la elegancia y la deportividad juntas en un hermoso diseño.",
+            "precio": "$160.000.000"
+        },
+        {
+            "id": 3,
+            "imagen": "/build/img/gls450.webp",
+            "nombre": "GLS SUV 450",
+            "descripcion": "Mercedes Benz GLS450 tecnología Hibrida no enchufable que nos brinda muy bajo consumo de combustible y gran potencia.",
+            "precio": "$352'900.000"
+        },
+        {
+            "id": 4,
+            "imagen": "/build/img/glc300.webp",
+            "nombre": "GLC 300 E Coupe AMG Line",
+            "descripcion": "Esta SUV de Mercedes-Benz la ideal para el día a día con una apariencia deportiva y de vanguardia.",
+            "precio": "$228'900.000"
+        },
+        {
+            "id": 5,
+            "imagen": "/build/img/glb200.webp",
+            "nombre": "GLB 200 SUV AMG Line",
+            "descripcion": "Ideal para quienes buscan un espacio versátil, sillas altas, cómodas y las ventajas del tren de rodaje de una SUV deportiva.",
+            "precio": "$197'900.000"
+        },
+        {
+            "id": 6,
+            "imagen": "/build/img/a200.webp",
+            "nombre": "Mercedes-Benz A200",
+            "descripcion": "El Mercedes Benz A200 Hatchback ofrece numerosas características de confort que llevan su bienestar a otro nivel. Así que si hablamos de comodidad, el A200 Hatchback está en la cima de su clase. ",
+            "precio": "$104'900.000"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+.presentacion-vehiculos {
+    margin-top: 3rem;
+    @include tablet {
+        @include grid(2, 1rem);
+        min-height: 66rem;
+    }
+    @include desktop {
+        @include grid(3, 1rem);
+        min-height: 66rem;
+    }
+}
+.vehiculo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imagen {
+    min-height: 30rem;
+    object-fit: unset;
+}
+.nombre {
+    padding-top: 2rem;
+    margin-left: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.8rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.descripcion {
+    font-size: 1.7rem;
+    color: $cafe;
+    margin-left: 1rem;
+}
+
+.precio {
+    color: $blanco;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2rem 0 2rem 1rem;
+}

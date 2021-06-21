@@ -1,0 +1,123 @@
+.cabecera {
+    background-color: $negro;
+
+}
+.manual {
+    display: none;
+    @include desktop {
+        display: block;
+        padding-top: 1.3rem;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            li {
+                margin-right: 3rem;
+                font-size: 1.3rem;
+                font-family: "Arial";
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                a {
+                    color: $cafe;
+                }
+            }
+        }
+    }
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 2rem;
+    @include desktop {
+        align-items: flex-end;
+        padding: 1rem 0;
+        padding-bottom: 2rem;
+        gap: 0;
+    }
+}
+
+.logotipo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 40rem;
+    @include tablet {
+        justify-content: center;
+    }
+    @include desktop {
+        justify-content: flex-start;
+    }
+
+    img {
+        width: 3rem;
+        @include desktop {
+            width: 6rem;
+        }
+    }
+
+    a.imagen-logo {
+        width: 5rem;
+        text-align: end;
+        @include desktop {
+            width: 6rem;
+        }
+    }
+    a {
+        color: $blanco;
+        text-transform: capitalize;
+        font-size: 2rem;
+        max-width: 12rem;
+        line-height: .9;
+        text-align: end;
+        font-weight: $media;
+        width: 12rem;
+        span {
+        font-weight: $delgada;
+        font-size: 1.1rem;
+        }
+    }
+}
+
+.floresta {
+    display: flex;
+    width: 23rem;
+    align-items: flex-end;
+
+    a{
+        color: white;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: $delgada;
+        letter-spacing: 1rem;
+        @include tablet {
+            font-size: 1.1rem;
+        }
+        span {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: $negrita;
+            letter-spacing: 0;
+            &::before {
+                content: '\A';
+                white-space: pre;
+            }
+
+            @include tablet {
+                font-size: 3rem
+            }
+        }
+        .empre {
+            font-size: 1.4rem;
+            font-weight: $delgada;
+            letter-spacing: 0;
+            &::before {
+                content: '';
+                white-space: pre;
+            }
+        }
+    }
+}
